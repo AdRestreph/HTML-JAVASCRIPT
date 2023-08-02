@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>"Maquetacion con CSS y Divs"</title>
+    <link rel="stylesheet" href="/FRONT-END/clase1/style.css" type="text/css">
+    <script>
+        function sumar() {
+            let campo1 = document.getElementById("campo1").value;
+            let campo2 = document.getElementById("campo2").value;
+            let resultado = parseInt(campo1 + campo2)
+            console.log(resultado)
+        }
+
+        function numeroParOImpar() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="contenedorPadre">
+        <div id="cabecera">
+
+        </div>
+        <div id="menu">
+            <p style="margin-top: 0; color:antiquewhite; font-size: 50px; font-weight:700;"><img
+                    src="/FRONT-END/clase1/pokeball.png" height="50" width="50"> POKEMON</p>
+        </div>
+        <div id="izquierda">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rsv2VkoIpk0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <img src="/FRONT-END/clase1/pokemon.png" height="80px" width="80px">
+        </div>
+        <div id="derecha">
+            <table>
+                <thead>
+                    <th>
+                        cedula
+                    </th>
+                    <th>
+                        nombres
+                    </th>
+                    <th>
+                        apellidos
+                    </th>
+                    <th>
+                        correo
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            1234
+                        </td>
+                        <td>
+                            Jorge Andres
+                        </td>
+                        <td>
+                            Leal
+                        </td>
+                        <td>jota2@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5678
+                        </td>
+                        <td>
+                            Andres David
+                        </td>
+                        <td>
+                            Restrepo Hernandez
+                        </td>
+                        <td>
+                            adrestreph@eafit.edu.co
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 0; color:antiquewhite; font-size: 20px; font-weight:700;">SUME AQUI</p>
+            <input type="text" id="campo1" name="campo1">
+            <input type="text" id="campo2" name="campo2">
+
+            <button class="button" onclick="sumar()"> CLICK PARA SUMAR </button>
+
+            <p style="margin-top: 0; color:antiquewhite; font-size: 20px; font-weight:700;">HAZ <a
+                    href="https://www.google.com" target="_blank">CLICK AQUI</a></p>
+            <video src="http://v2v.cc/~j/theora_testsuite/320x240.ogg" width="200" height="200"></video>
+        </div>
+        <div id="pie">
+
+        </div>
+    </div>
+</body>
+
+</html>
